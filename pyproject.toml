@@ -1,0 +1,29 @@
+[project]
+name = "maze_mapper"
+version = "0.0.0"
+authors = [{ name = "Jake Ward", email = "jakeward28@hotmail.com" }]
+description = "Maze mapping algorithms"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pygame==2.4.0",
+]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools~=67.6.0",
+    "wheel~=0.40.0",
+]
+
+[tool.pylint]
+max-line-length = 88
+disable = [
+    "C0103", # (invalid-name)
+    "C0114", # (missing-module-docstring)
+    "C0115", # (missing-class-docstring)
+    "C0116", # (missing-function-docstring)
+    "R0903", # (too-few-public-methods)
+    "R0913", # (too-many-arguments)
+    "W0105", # (pointless-string-statement)
+]
